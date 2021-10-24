@@ -9,6 +9,12 @@ module.exports = {
   plugins: [
     ['@babel/plugin-transform-runtime', {
       regenerator: true
-    }]
-  ]
+	  }
+	],
+	  ["@babel/plugin-proposal-class-properties", { "loose": false }],
+	  ["@babel/plugin-proposal-decorators", { "legacy": true }],
+	],
+  assumptions: {
+    "setPublicClassFields": false
+	}
 }
