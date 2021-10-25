@@ -1,4 +1,3 @@
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const resolveTsconfigPathsToAlias = require('./resolve-tsconfig-path-to-webpack-alias');
 module.exports = {
 	resolve: {
