@@ -1,14 +1,12 @@
-import { ChakraProvider } from '@chakra-ui/react'
-
-import { GlobalStyle } from './styles/GlobalStyle'
-
+import React from 'react'
+import { ChakraProvider, Flex } from '@chakra-ui/react'
+import { RouterProvider } from './Router'
 import HomePage from './screens/home'
-import { useAppStore } from '@core/stores'
 
 export function App() {
 	return (
 		<ChakraProvider>
-			<HomePage />
+			<RouterProvider />
 		</ChakraProvider >
 	)
 }

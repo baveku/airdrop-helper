@@ -8,9 +8,9 @@ function useAppStore(): AppStore {
 	return useContext(AppStoreContext)
 }
 
-function useStoreSelector<T>(fn: (store: AppStore) => T): T {
+function useNestedStore<T>(fn: (store: AppStore) => T): T {
 	const store = useAppStore()
 	return fn(store)
 }
 
-export { useAppStore, useStoreSelector }
+export { useAppStore, useNestedStore }

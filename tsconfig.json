@@ -25,13 +25,16 @@
 				"./src/core/*"
 			],
 			"@components/*": [
-				"./src/components"
+				"./src/components/*"
 			],
 			"@screens/*": [
 				"./src/screens/*"
 			],
 			"@assets/*": [
 				"./assets/*"
+			],
+			"@router": [
+				"./src/Router"
 			]
 		}
 	}
